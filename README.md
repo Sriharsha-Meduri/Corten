@@ -49,7 +49,7 @@ The project is split into two high-performance local modules:
 ### 2. The Edge Engine (NVIDIA Jetson Nano)
 *   **Tech:** TensorRT + OpenCV.
 *   **Role:** The "on-site" muscle connected directly to CCTV/USB cameras.
-*   **Optimization:** Uses TensorRT (`.engine`) with FP16 precision to achieve real-time detection at 25+ FPS directly on the Jetson’s Maxwell GPU.
+*   **Optimization:** Uses TensorRT (`.engine`) with FP16 precision to achieve real-time detection at 25+ FPS directly on the Jetsonâ€™s Maxwell GPU.
 
 ---
 
@@ -85,5 +85,6 @@ npm run dev
 | **Privacy** | 100% Data remains Local | 100% Data remains Local |
 
 ---
+OUR DEMO LINK: visionguardai.vercel.app
 
 *Developed for the **DP World Hackathon 2026**.*
