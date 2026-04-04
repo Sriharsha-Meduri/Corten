@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VisionGuardAI — Container Damage Detection</title>
+    <meta name="description" content="VisionGuardAI is an industrial AI system for real-time container damage detection. Multi-label YOLO vision detects Holes, Dents, Rust, Deframe, and Mini-dents live from edge hardware with sub-50ms latency." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans:    ['Instrument Sans', 'Inter', 'sans-serif'],
+              display: ['DM Serif Display', 'Georgia', 'serif'],
+              mono:    ['DM Mono', 'monospace'],
+            },
+            colors: {
+              ink:    { DEFAULT: '#F5F0E8', 2: '#F5F0E8', 3: '#D4CFC8', 4: '#D4CFC8' },
+              paper:  { DEFAULT: 'rgba(26,26,26,0.55)', 2: 'rgba(26,26,26,0.45)', 3: 'rgba(255,255,255,0.1)' },
+              accent: { DEFAULT: '#FFFFFF', light: 'rgba(255,255,255,0.12)' },
+              cblue:  { DEFAULT: '#7eb8da', light: 'rgba(126,184,218,0.15)' },
+              cgreen: { DEFAULT: '#73bfc4', light: 'rgba(115,191,196,0.15)' },
+              camber: { DEFAULT: '#ff810a', light: 'rgba(255,129,10,0.15)'  },
+              cdanger:{ DEFAULT: '#FF3B3B', light: 'rgba(255,59,59,0.15)'   },
+              cyellow:{ DEFAULT: '#FFD60A', light: 'rgba(255,214,10,0.15)'  },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Instrument Sans', 'Inter', sans-serif;
+        background-color: #0a0e16;
+        color: #F5F0E8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+      /* Scroll reveal */
+      .fade-up {
+        opacity: 0; transform: translateY(28px);
+        transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+      }
+      .fade-up.is-visible { opacity: 1; transform: translateY(0); }
+
+      .fade-left {
+        opacity: 0; transform: translateX(-28px);
+        transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+      }
+      .fade-left.is-visible { opacity: 1; transform: translateX(0); }
+
+      .fade-right {
+        opacity: 0; transform: translateX(28px);
+        transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+      }
+      .fade-right.is-visible { opacity: 1; transform: translateX(0); }
+
+      .fade-scale {
+        opacity: 0; transform: scale(0.96) translateY(16px);
+        transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1);
+      }
+      .fade-scale.is-visible { opacity: 1; transform: scale(1) translateY(0); }
+
+      /* Stagger delays */
+      .fade-up-d1 { transition-delay: 100ms; }
+      .fade-up-d2 { transition-delay: 200ms; }
+      .fade-up-d3 { transition-delay: 300ms; }
+      .fade-up-d4 { transition-delay: 400ms; }
+      .fade-up-d5 { transition-delay: 480ms; }
+
+      /* Pulse for live indicators */
+      @keyframes cd-pulse { 0%,100%{opacity:1} 50%{opacity:.25} }
+
+      /* Scanline animation for video feed mockup */
+      @keyframes scanline {
+        0%   { transform: translateY(0);    opacity: 0.6; }
+        90%  { opacity: 0.6; }
+        100% { transform: translateY(400px); opacity: 0;   }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
