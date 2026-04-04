@@ -18,7 +18,7 @@ const Hero: React.FC = () => (
         <div className="inline-flex items-center gap-2.5 rounded-full px-4 py-1.5 border border-white/15"
           style={{ background: 'rgba(126,184,218,0.08)', backdropFilter: 'blur(8px)' }}>
           <span className="w-1.5 h-1.5 rounded-full bg-[#73bfc4]" style={{ animation: 'cd-pulse 1.8s infinite' }} />
-          <span className="text-xs font-mono text-[#73bfc4] tracking-widest uppercase">Industrial AI · Real-Time Vision</span>
+          <span className="text-xs font-mono text-[#73bfc4] tracking-widest uppercase">Vision Guard AI · Real-Time Vision</span>
         </div>
       </div>
 

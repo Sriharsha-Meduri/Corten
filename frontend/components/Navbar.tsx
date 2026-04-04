@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
             <ScanLine size={14} className="text-[#0d1117]" />
           </div>
           <span className="text-lg font-semibold tracking-tight text-[#F5F0E8] font-display">
-            Container<span className="text-[#7eb8da]">AI</span>
+            Vision Guard<span className="text-[#7eb8da]">AI</span>
           </span>
         </button>
 
