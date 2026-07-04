@@ -13,7 +13,7 @@ const steps = [
     num: '02',
     icon: Cpu,
     title: 'AI Detects in Real Time',
-    desc: 'A fine-tuned YOLO model runs directly on the edge device, classifying five damage types — Hole, Dent, Deframe, Mini-dent, and Rust — with confidence scores in under 50ms.',
+    desc: 'A fine-tuned YOLO model runs directly on the edge device, classifying five damage types (Hole, Dent, Deframe, Minor-dent, and Rust) with confidence scores in under 50ms.',
     chip: 'YOLO · Edge AI',
   },
   {

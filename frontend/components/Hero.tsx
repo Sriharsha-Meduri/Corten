@@ -1,6 +1,7 @@
 import React from 'react';
 import DashboardMockup from './DashboardMockup';
-import { Camera } from 'lucide-react';
+
+const goAnalyse = () => { window.location.hash = 'analyse'; window.scrollTo({ top: 0 }); };
 
 const stats = [
   { val: '98.7%', label: 'Detection Accuracy' },
@@ -18,7 +19,7 @@ const Hero: React.FC = () => (
         <div className="inline-flex items-center gap-2.5 rounded-full px-4 py-1.5 border border-white/15"
           style={{ background: 'rgba(126,184,218,0.08)', backdropFilter: 'blur(8px)' }}>
           <span className="w-1.5 h-1.5 rounded-full bg-[#73bfc4]" style={{ animation: 'cd-pulse 1.8s infinite' }} />
-          <span className="text-xs font-mono text-[#73bfc4] tracking-widest uppercase">Vision Guard AI · Real-Time Vision</span>
+          <span className="text-xs font-mono text-[#73bfc4] tracking-widest uppercase">Corten · Real-Time Vision</span>
         </div>
       </div>
 
@@ -30,18 +31,14 @@ const Hero: React.FC = () => (
 
       {/* Sub */}
       <p className="fade-up fade-up-d2 text-lg md:text-xl text-[#D4CFC8]/80 leading-relaxed max-w-2xl mb-10">
-        AI-powered container damage detection. Multi-label YOLO vision identifies Holes, Dents, Rust, and Deformations — live, with confidence scores, from edge hardware.
+        AI-powered container damage detection. Multi-label YOLO vision identifies Holes, Dents, Rust, and Deformations in real time, with confidence scores, from edge hardware.
       </p>
 
       {/* CTAs */}
       <div className="fade-up fade-up-d3 flex flex-wrap gap-4 mb-14">
-        <button className="bg-white hover:bg-white/90 text-[#1a1a1a] px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 hover:-translate-y-px shadow-lg shadow-white/20">
+        <button onClick={goAnalyse}
+          className="bg-white hover:bg-white/90 text-[#1a1a1a] px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 hover:-translate-y-px shadow-lg shadow-white/20">
           Try Now →
-        </button>
-        <button className="flex items-center gap-2 text-[#F5F0E8] px-6 py-3 rounded-full text-sm font-medium border border-white/15 transition-all duration-200 hover:bg-white/8"
-          style={{ backdropFilter: 'blur(8px)', background: 'rgba(255,255,255,0.06)' }}>
-          <Camera size={14} />
-          Watch Live Feed
         </button>
       </div>
 

@@ -2,9 +2,9 @@ import React from 'react';
 import { Wifi, Layers, Activity, BarChart2, Clock, MonitorPlay } from 'lucide-react';
 
 const damageLabels = [
-  { name: 'Hole',      desc: 'Structural punctures and perforations — highest severity.',               color: '#FF3B3B', severity: 'CRITICAL',  icon: '⬡' },
+  { name: 'Hole',      desc: 'Structural punctures and perforations. Highest severity.',               color: '#FF3B3B', severity: 'CRITICAL',  icon: '⬡' },
   { name: 'Dent',      desc: 'Surface depressions from impact. May compromise container integrity.',   color: '#ff810a', severity: 'MODERATE',  icon: '◈' },
-  { name: 'Deframe',   desc: 'Frame misalignment or structural warping — structural failure risk.',    color: '#FF3B3B', severity: 'CRITICAL',  icon: '▣' },
+  { name: 'Deframe',   desc: 'Frame misalignment or structural warping. Structural failure risk.',    color: '#FF3B3B', severity: 'CRITICAL',  icon: '▣' },
   { name: 'Mini-Dent', desc: 'Small, shallow dents with minimal structural impact. Logged for audit.', color: '#FFD60A', severity: 'MINOR',    icon: '◉' },
   { name: 'Rust',      desc: 'Corrosion and oxidation. Indicates long-term exposure or coating failure.', color: '#ff810a', severity: 'MODERATE', icon: '◍' },
 ];

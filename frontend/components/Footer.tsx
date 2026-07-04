@@ -45,7 +45,7 @@ const Footer: React.FC = () => (
               <ScanLine size={14} className="text-[#0d1117]" />
             </div>
             <span className="text-lg font-semibold text-[#F5F0E8] font-display">
-              Container<span className="text-[#7eb8da]">AI</span>
+              Cor<span className="text-[#7eb8da]">ten</span>
             </span>
           </div>
           <p className="text-sm text-[#D4CFC8]/50 leading-relaxed mb-6">
@@ -85,14 +85,15 @@ const Footer: React.FC = () => (
           <h3 className="font-display text-2xl text-[#F5F0E8] tracking-tight mb-1">Ready to automate your inspection?</h3>
           <p className="text-sm text-[#D4CFC8]/55">Get a live demo configured for your port or facility.</p>
         </div>
-        <button className="flex-shrink-0 bg-white hover:bg-white/90 text-[#1a1a1a] px-7 py-3 rounded-full text-sm font-semibold transition-all duration-200 hover:-translate-y-px shadow-md shadow-white/15">
+        <button onClick={() => { window.location.hash = 'analyse'; window.scrollTo({ top: 0 }); }}
+          className="flex-shrink-0 bg-white hover:bg-white/90 text-[#1a1a1a] px-7 py-3 rounded-full text-sm font-semibold transition-all duration-200 hover:-translate-y-px shadow-md shadow-white/15">
           Try Now →
         </button>
       </div>
 
       {/* Bottom bar */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-3 border-t border-white/8 pt-6">
-        <p className="text-xs text-[#D4CFC8]/30 font-mono">© 2025 VisionGuardAI. All rights reserved.</p>
+        <p className="text-xs text-[#D4CFC8]/30 font-mono">© 2026 Corten. All rights reserved.</p>
         <div className="flex items-center gap-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]" style={{ animation: 'cd-pulse 1.8s infinite' }} />
           <span className="text-xs font-mono text-[#D4CFC8]/30">System Active · All cameras operational</span>

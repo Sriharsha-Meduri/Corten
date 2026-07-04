@@ -20,7 +20,7 @@ const About: React.FC = () => (
     <div className="max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-16 items-center">
 
-        {/* Left — Text */}
+        {/* Left: Text */}
         <div>
           <div className="fade-left inline-flex items-center gap-2 rounded-full px-3 py-1 mb-5 border border-white/12 text-[11px] font-mono text-[#7eb8da]/70 tracking-widest uppercase"
             style={{ background: 'rgba(126,184,218,0.06)' }}>
@@ -30,10 +30,10 @@ const About: React.FC = () => (
             Built for the<br />Edge. Built for Speed.
           </h2>
           <p className="fade-left fade-up-d2 text-[#D4CFC8]/65 leading-relaxed mb-6">
-            VisionGuardAI runs entirely on edge hardware — no round-trip to the cloud. A custom-trained YOLO model loaded directly on a Jetson device processes live camera frames in real time, streaming structured detection events to your operator dashboard over WebSocket.
+            Corten runs entirely on edge hardware, with no round-trip to the cloud. A custom-trained YOLO model loaded directly on a Jetson device processes live camera frames in real time, streaming structured detection events to your operator dashboard over WebSocket.
           </p>
           <p className="fade-left fade-up-d3 text-[#D4CFC8]/65 leading-relaxed mb-10">
-            Designed for port operators, logistics hubs, and shipping yards — any environment where you need to inspect containers at scale without slow manual processes.
+            Designed for port operators, logistics hubs, and shipping yards, any environment where you need to inspect containers at scale without slow manual processes.
           </p>
 
           {/* Tech stack chips */}
@@ -54,7 +54,7 @@ const About: React.FC = () => (
           </div>
         </div>
 
-        {/* Right — Metrics card */}
+        {/* Right: Metrics card */}
         <div className="fade-right">
           <div className="rounded-2xl p-8 border border-white/10"
             style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(16px)' }}>

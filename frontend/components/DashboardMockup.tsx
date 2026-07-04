@@ -44,7 +44,7 @@ const DashboardMockup: React.FC = () => (
     <div className="flex items-center justify-between px-4 py-2.5 border-b border-white/10"
       style={{ background: 'rgba(14,20,32,0.9)' }}>
       <div className="flex items-center gap-3 flex-wrap">
-        <span className="text-[10px] font-mono text-[#7eb8da]/60 tracking-widest uppercase">VisionGuardAI</span>
+        <span className="text-[10px] font-mono text-[#7eb8da]/60 tracking-widest uppercase">Corten</span>
         <span className="text-white/20">|</span>
         <span className="text-[11px] font-mono text-[#F5F0E8]">ID: <span className="text-[#7eb8da]">CN-7702</span></span>
         <span className="text-white/20">|</span>
