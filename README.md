@@ -7,9 +7,11 @@
 </p>
 
 <p align="center">
-  <a href="https://cortenai.vercel.app">Live Demo</a>
-  &nbsp;·&nbsp;
-  <a href="https://corten-backend.onrender.com/docs">API Docs</a>
+  <a href="https://cortenai.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-cortenai.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/></a>
+  &nbsp;
+  <a href="https://corten-backend.onrender.com/docs"><img src="https://img.shields.io/badge/API_Docs-Swagger_UI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="API Docs"/></a>
+  &nbsp;
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"/></a>
 </p>
 
 ---
