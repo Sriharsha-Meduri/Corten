@@ -84,6 +84,16 @@
         90%  { opacity: 0.6; }
         100% { transform: translateY(400px); opacity: 0;   }
       }
+
+      /* ---------- Mobile refinements ----------
+         All rules are max-width only, so the desktop layout is never affected. */
+      @media (max-width: 767px) {
+        html, body { overflow-x: hidden; }
+      }
+      @media (max-width: 480px) {
+        /* Let the largest hero display type breathe on small phones */
+        section#hero h1 { font-size: 2.6rem; line-height: 1.05; }
+      }
     </style>
   </head>
   <body>
